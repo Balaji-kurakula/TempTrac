@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="./temptrac logo.jpeg" alt="logo">
+    <h1 class="Temp">Temp</h1>
+    <h1 class="Trac">Trac</h1>
+  </header>
+    <div class="container">
+        <h1 class="weather-forecast-text">Track the Temperature of Future</h1>
+        <label for="day-select">Select Day:</label>
+        <select id="day-select"></select>
+        <label for="time-select">Select Time:</label>
+        <select id="time-select"></select>
+        <button onclick="fetchTemperature()">Get Temperature</button>
+        <div id="temperature-display"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
